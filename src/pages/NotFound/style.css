@@ -1,0 +1,13 @@
+.links {
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links > a {
+  background-color: brown;
+  color: #fff;
+  padding: 1%;
+  border-radius: 5px;
+}
