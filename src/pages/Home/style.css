@@ -19,6 +19,9 @@
   margin: 5%;
   padding: 2%;
 }
+.lista-filmes article img {
+  width: 100%;
+}
 .lista-filmes article a {
   display: flex;
   text-decoration: none;
