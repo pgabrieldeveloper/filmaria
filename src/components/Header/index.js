@@ -6,7 +6,7 @@ function Header() {
       <Link className="logo" to="/">
         Filmaria
       </Link>
-      <Link className="favoritos" to="/">
+      <Link className="favoritos" to="/favoritos">
         Salvos
       </Link>
     </header>
