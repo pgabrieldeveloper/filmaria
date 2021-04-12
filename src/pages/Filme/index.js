@@ -21,7 +21,22 @@ function Filme(params) {
     }
     loadFilme();
   }, [id, history]);
+  function saveMovie() {
+    const myList = localStorage.getItem("filmes");
 
+    let moviesSaves = JSON.parse(myList) || [];
+
+    const hasMovie = moviesSaves.some(
+      (filmeSalvo) => filmeSalvo.id === filme.id
+    );
+    if (hasMovie) {
+      alert("Você já possui esse filme Salvo ");
+      return;
+    }
+    moviesSaves.push(filme);
+    localStorage.setItem("filmes", JSON.stringify(moviesSaves));
+    alert("Filme salvo com sucesso");
+  }
   if (loading) {
     return (
       <div className="filme-info">
@@ -37,7 +52,7 @@ function Filme(params) {
       <h3>Sinopse</h3>
       <p>{filme.sinopse}</p>
       <div className="botoes">
-        <button onClick={() => {}}>Salvar</button>
+        <button onClick={saveMovie}>Salvar</button>
         <button>
           <a
             target="blank"
