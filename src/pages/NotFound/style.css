@@ -8,6 +8,7 @@
 .links > a {
   background-color: brown;
   color: #fff;
-  padding: 1%;
+  padding: 2%;
   border-radius: 5px;
+  font-size: 3vh;
 }
