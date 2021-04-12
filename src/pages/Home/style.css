@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.lista-filmes {
+  width: 76.5%;
+}
+
+.lista-filmes article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  margin: 5%;
+  padding: 2%;
+}
+.lista-filmes article a {
+  display: flex;
+  text-decoration: none;
+  background-color: brown;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+  color: #fff;
+}
