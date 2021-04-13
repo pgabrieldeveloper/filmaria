@@ -21,3 +21,23 @@ header {
   font-weight: bold;
   color: black;
 }
+.contato {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.contato a {
+  background-color: brown;
+  color: #fff;
+  margin-right: 0.5%;
+  padding: 0.3%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.contato a:hover {
+  color: rgb(166, 58, 199);
+}
